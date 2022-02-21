@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import Image from 'next/image'
 import { ThumbUpIcon } from '@heroicons/react/outline'
 
-function Thumbnail({result}) {
+const Thumbnail = forwardRef(({result}, ref) => {
   console.log(result)
   const BASE_URL = "https://www.themoviedb.org/t/p/original/"
   return (
-    <div className='p-2 group cursor-pointer transition duration-200 ease-in transform
+    <div ref={ref} className='p-2 group cursor-pointer transition duration-200 ease-in transform
       sm:hover:scale-105 hover:z-50
       '>
         {/* img */}
@@ -35,8 +35,7 @@ function Thumbnail({result}) {
         </div>
     </div>
   )
-}
+})
 
-Thumbnail.propTypes = {}
 
 export default Thumbnail
