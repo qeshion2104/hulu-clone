@@ -4,6 +4,7 @@ module.exports = {
     domains: [
       "www.w3schools.com",
       "image.tmdb.org",
+      "www.themoviedb.org"
     ],
   },
 }
