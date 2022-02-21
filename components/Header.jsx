@@ -27,6 +27,7 @@ function Header() {
           
       </div>
       <Image
+        alt="just a logo"
         className="object-contain"
         src="https://www.w3schools.com/html/img_chania.jpg" // I need some hulu logo by myself
         width={200}
